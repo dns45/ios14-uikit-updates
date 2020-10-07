@@ -111,7 +111,7 @@
                                     <segment title="Wheels"/>
                                 </segments>
                                 <connections>
-                                    <action selector="updateDatePicker:" destination="519-iI-YYO" eventType="valueChanged" id="B0Y-SE-w71"/>
+                                    <action selector="segmentedControlValueChanged:" destination="519-iI-YYO" eventType="valueChanged" id="PIF-PB-WwM"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>

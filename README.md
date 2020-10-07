@@ -9,3 +9,7 @@ Created based on this article: <https://www.appcoda.com/colorpicker-datepicker/>
 ## ❶ Color picker
 
 ![Color Picker](README_assets/colorPicker.gif)
+
+## ❷ Date picker
+
+![Date Picker](README_assets/datePicker.gif)
