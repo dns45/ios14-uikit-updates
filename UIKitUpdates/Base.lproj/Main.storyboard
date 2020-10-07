@@ -31,7 +31,7 @@
                                 </constraints>
                                 <state key="normal" title="Pick Color"/>
                                 <connections>
-                                    <action selector="pickColor:" destination="Ukr-VF-qnZ" eventType="touchUpInside" id="11v-Yj-Ev3"/>
+                                    <action selector="pickColorTapped:" destination="Ukr-VF-qnZ" eventType="touchUpInside" id="rdv-GY-xHO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,6 +47,7 @@
                     <tabBarItem key="tabBarItem" title="Color Picker" image="paintbrush" catalog="system" selectedImage="paintbrush" id="iec-0t-htM"/>
                     <connections>
                         <outlet property="colorSampleView" destination="zpE-2Z-qLI" id="ak5-Qv-GYd"/>
+                        <outlet property="pickColorButton" destination="35X-sC-Eux" id="oFc-C8-Zlp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EVM-IC-XDg" sceneMemberID="firstResponder"/>

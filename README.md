@@ -5,3 +5,7 @@
 Demo app to show new stuff from UIKit in iOS 14 SDK.
 
 Created based on this article: <https://www.appcoda.com/colorpicker-datepicker/>
+
+## ❶ Color picker
+
+![Color Picker](README_assets/colorPicker.gif)

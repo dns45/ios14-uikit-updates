@@ -8,17 +8,33 @@
 import UIKit
 
 class ColorPickerViewController: UIViewController {
+    private let defaultColor = UIColor.red
 
-    @IBOutlet weak var colorSampleView: UIView!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var colorSampleView: UIView! {
+        didSet {
+            colorSampleView.backgroundColor = defaultColor
+            colorSampleView.layer.cornerRadius = 8.0
+        }
     }
 
-    @IBAction func pickColor(_ sender: Any) {
-
+    @IBOutlet weak var pickColorButton: UIButton! {
+        didSet {
+            pickColorButton.tintColor = defaultColor
+        }
     }
 
+    @IBAction func pickColorTapped(_ sender: UIButton) {
+        let picker = UIColorPickerViewController()
+        picker.delegate = self
+        picker.selectedColor = colorSampleView.backgroundColor ?? .black
+        picker.supportsAlpha = false
+        present(picker, animated: true, completion: nil)
+    }
+}
+
+extension ColorPickerViewController: UIColorPickerViewControllerDelegate {
+    func colorPickerViewControllerDidSelectColor(_ viewController: UIColorPickerViewController) {
+        colorSampleView.backgroundColor = viewController.selectedColor
+        pickColorButton.tintColor = viewController.selectedColor
+    }
 }
