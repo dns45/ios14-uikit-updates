@@ -153,13 +153,41 @@
                                 </constraints>
                                 <state key="normal" title="Deferred Menu"/>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bsd-xQ-hWl" userLabel="Switch View">
+                                <rect key="frame" x="94.5" y="539" width="225" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display async options inline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0U-uM-gnl">
+                                        <rect key="frame" x="0.0" y="7.5" width="168" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7WN-Aa-Jtr">
+                                        <rect key="frame" x="176" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="handleSwitchValueChange:" destination="DpG-G1-e4r" eventType="valueChanged" id="TR5-mt-7od"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="7WN-Aa-Jtr" firstAttribute="top" secondItem="Bsd-xQ-hWl" secondAttribute="top" id="1Sj-fT-fvg"/>
+                                    <constraint firstItem="7WN-Aa-Jtr" firstAttribute="leading" secondItem="F0U-uM-gnl" secondAttribute="trailing" constant="8" id="4Ew-d1-jpQ"/>
+                                    <constraint firstItem="F0U-uM-gnl" firstAttribute="leading" secondItem="Bsd-xQ-hWl" secondAttribute="leading" id="Ta3-1j-jhy"/>
+                                    <constraint firstAttribute="trailing" secondItem="7WN-Aa-Jtr" secondAttribute="trailing" id="WdL-zg-0u1"/>
+                                    <constraint firstItem="F0U-uM-gnl" firstAttribute="centerY" secondItem="Bsd-xQ-hWl" secondAttribute="centerY" id="ZeQ-hL-KyG"/>
+                                    <constraint firstAttribute="bottom" secondItem="7WN-Aa-Jtr" secondAttribute="bottom" id="jgb-sl-uRi"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hgb-BI-V1A"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hXU-Wc-Gq9" firstAttribute="centerX" secondItem="gLg-lz-KHU" secondAttribute="centerX" id="7wm-gV-xCw"/>
+                            <constraint firstItem="Bsd-xQ-hWl" firstAttribute="top" secondItem="hXU-Wc-Gq9" secondAttribute="bottom" constant="16" id="9cR-ZH-sjl"/>
                             <constraint firstItem="hXU-Wc-Gq9" firstAttribute="top" secondItem="VaM-Nk-2wE" secondAttribute="bottom" constant="30" id="OMr-86-Bd1"/>
                             <constraint firstItem="VaM-Nk-2wE" firstAttribute="centerX" secondItem="gLg-lz-KHU" secondAttribute="centerX" id="Qs4-QU-ZhZ"/>
+                            <constraint firstItem="Bsd-xQ-hWl" firstAttribute="centerX" secondItem="gLg-lz-KHU" secondAttribute="centerX" id="SBP-Fw-94d"/>
                             <constraint firstItem="VaM-Nk-2wE" firstAttribute="centerY" secondItem="gLg-lz-KHU" secondAttribute="centerY" id="TUt-rr-gQx"/>
                         </constraints>
                     </view>
@@ -173,6 +201,7 @@
                     <connections>
                         <outlet property="actionItem" destination="e1x-h5-7Uh" id="wJU-vo-XyO"/>
                         <outlet property="deferredMenuButton" destination="hXU-Wc-Gq9" id="TjI-dR-kgA"/>
+                        <outlet property="displayInlineSwitch" destination="7WN-Aa-Jtr" id="Iqd-nu-wAd"/>
                         <outlet property="tapMeButton" destination="VaM-Nk-2wE" id="Ha8-F6-TLP"/>
                     </connections>
                 </viewController>

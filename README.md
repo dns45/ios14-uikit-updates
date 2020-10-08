@@ -13,3 +13,13 @@ Created based on this article: <https://www.appcoda.com/colorpicker-datepicker/>
 ## ❷ Date picker
 
 ![Date Picker](README_assets/datePicker.gif)
+
+## ❸ Displaying menus
+
+### Static menus
+
+![Bar Button Menu](README_assets/barButtonMenu.png) ![Button Menu](README_assets/buttonMenu.png)
+
+### Async menus
+
+![Async Menu Inline](README_assets/asyncMenuInline.gif) ![Async Menu Submenu](README_assets/asyncMenuSubmenu.gif)
