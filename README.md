@@ -23,3 +23,7 @@ Created based on this article: <https://www.appcoda.com/colorpicker-datepicker/>
 ### Async menus
 
 ![Async Menu Inline](README_assets/asyncMenuInline.gif) ![Async Menu Submenu](README_assets/asyncMenuSubmenu.gif)
+
+## ❹ Using UIActions
+
+![Actions](README_assets/actions.gif)
